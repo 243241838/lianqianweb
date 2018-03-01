@@ -1,0 +1,43 @@
+
+$font:'微软雅黑';
+// @mixin marginR2 ($param) {
+//     margin-right: $param/4;
+//     @media screen and (min-width: 992px) { 
+//         margin-right: $param/3;
+//     }
+//     @media screen and (min-width: 1200px) { 
+//         margin-right: $param/2;
+//     }
+//     @media screen and (min-width: 1400px) { 
+//         margin-right: $param;
+//     }
+// }
+.ellip{
+     overflow: hidden;
+     display: -webkit-box;
+     -webkit-line-clamp: 1;
+     -webkit-box-orient: vertical;
+     text-overflow: ellipsis;
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+// @media screen and (min-width: 1204px) { 
+//     .blank{
+//          padding:0 $padding/4;
+//     }
+// }
+
+.fl {
+    float:left;
+}
+.fr{
+    float:right;
+}
+html, body{
+    min-width:1180px;
+    font-family: $font;
+}
+.center{
+    width:1180px;
+    height:100%;
+    margin:0 auto;
+}
